@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7eef7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #3a3a3a;
+    color: white;
+    padding: 20px 0;
+}
+
+#catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-header h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.faixa-etaria {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.faixa-etaria.verde {
+    background-color: #28a745;
+}
+
+.faixa-etaria.amarelo {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.faixa-etaria.vermelho {
+    background-color: #dc3545;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body p {
+    margin: 0 0 10px;
+}
+
+.card-footer {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
